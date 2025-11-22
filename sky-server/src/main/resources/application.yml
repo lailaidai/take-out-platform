@@ -12,6 +12,10 @@ spring:
       url: jdbc:mysql://${sky.datasource.host}:${sky.datasource.port}/${sky.datasource.database}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
       username: ${sky.datasource.username}
       password: ${sky.datasource.password}
+  redis:
+    host: ${sky.redis.host}
+    port: ${sky.redis.port}
+    database: ${sky.redis.database}
 
 mybatis:
   #mapper配置文件
@@ -30,7 +34,6 @@ logging:
         controller: info
 
 
-
 sky:
   jwt:
     # 设置jwt签名加密时使用的秘钥
@@ -44,3 +47,10 @@ sky:
     access-key-id: ${sky.alioss.access-key-id}
     access-key-secret: ${sky.alioss.access-key-secret}
     bucket-name: ${sky.alioss.bucket-name}
+
+
+
+
+
+
+

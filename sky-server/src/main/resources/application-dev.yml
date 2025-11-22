@@ -11,6 +11,10 @@ sky:
     access-key-id: LTAI5tKcCUawnnLyZKgwTpvQ
     access-key-secret: SVu7A5Hvjl87RYHAXezMrjnk46nyAV
     bucket-name: sky-lailai
+  redis:
+    host: localhost
+    port: 6379
+    database: 10
 
 
 
